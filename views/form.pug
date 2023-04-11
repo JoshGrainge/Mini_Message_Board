@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  form(method='POST' action='/new')
+    block content
+    h3 Username:
+      input(type='text', name='user')
+    h3 Text:
+      input(type='text', name='text')
+    button(type='submit') Submit
